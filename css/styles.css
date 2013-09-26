@@ -1,0 +1,413 @@
+/*
+ * Defaults
+ */
+
+/*a:link {color:#FF0000;}      /* unvisited link */
+/*a:visited {color:#00FF00;}  /* visited link */
+/*a:hover {color:#FF00FF;}  /* mouse over link */
+/*a:active {color:#0000FF;}  /* selected link */
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'bariol_regular', sans-serif;
+  font-size: 1.0em;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #222;
+}
+
+ a {
+  color: #37c217;
+  text-decoration: none;
+}
+
+
+p a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+p a:hover {
+  border-bottom: none;
+} 
+
+img {
+  border: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0px 0 1px 0;
+  /*line-height: 1.4em;*/
+}
+
+/* Logo */
+h0 {
+  font-family: 'bariol_thin', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-weight: 200;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  font-family: 'bariol_regular', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #d9593d;
+}
+
+/* Sub-Title */
+h2 {
+  font-family: 'bariol_regular', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'bariol_regular', sans-serif;
+  font-size: 1.0em;
+  line-height: 0.0em;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 400;
+}
+
+/* Menu */
+h4 {
+  font-family: 'bariol_light', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* Projects Title */
+h5 {
+  font-family: 'bariol_bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+/*
+ * Utilities
+ */
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-center {
+  margin: 0 auto 0 auto;
+}
+
+.column {
+  float: left;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.column.last {
+  margin: 0;
+}
+
+.clear {clear:both;}
+
+.dashbreak {
+  clear: both;
+  height: 20px;
+  width: 100%;
+  border-top:1px dashed #d9593d;
+}
+
+
+/*
+ * Parts
+ */
+
+#bg {
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background-image: url('http://www.beta.dannyrolph.net/about/01_night shot_E.bmp');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  image-rendering:-moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering:-webkit-optimize-contrast; -ms-interpolation-mode:nearest-neighbor;
+}
+
+.background-image {
+  image-rendering:-moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering:-webkit-optimize-contrast; -ms-interpolation-mode:nearest-neighbor;
+}
+
+.mc-image {
+  image-rendering:-moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering:-webkit-optimize-contrast; -ms-interpolation-mode:nearest-neighbor;
+}
+
+#bg img.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*height: 100%; width: auto;
+  margin: 0;
+  padding: 0;
+  margin-left:auto;
+  margin-right:auto;*/
+  opacity:0.9; filter:alpha(opacity=90); /* For IE8 and earlier */
+  image-rendering:-moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering:-webkit-optimize-contrast; -ms-interpolation-mode:nearest-neighbor;
+}
+
+#wrapper {
+  margin: 0px auto 0px auto;
+  width: 960px;
+}
+
+#header {
+  /* position: relative; */
+  height: 65px;
+  margin-bottom: 19px;
+  display: block;
+}
+
+#header #title {
+  position: relative;
+  float: left;
+  height: 65px; 
+  width: 210px;
+  background-color: #d9593d;
+  display: block;
+}
+
+#header #title h0 a {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  display: inline;
+  color: #fff;
+}
+
+
+/*
+ * Menu
+ */
+
+#menu {
+  /*position: relative;*/
+  margin-top: 8px;
+  margin-left: 60px;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  text-decoration: none;
+  max-height: 40px;
+}
+
+#menu a {
+  color: #272123;
+}
+
+#menu ul, #menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  opacity:0.75; filter:alpha(opacity=75); /* For IE8 and earlier */
+}
+
+
+#menu li {
+  display: inline;
+  margin-right: 60px;
+}
+
+#menu li a:hover {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #272123;
+}
+
+#menu .active a {
+  color: #d9593d;
+}
+
+#current {
+  color: #d9593d !important;
+}
+
+
+/*
+* Icons
+*/
+
+#header #icons {
+  position: relative;
+  margin-top: 41px;
+  float: right;
+  display: block;
+  background-color: #fff;
+  opacity:0.75; filter:alpha(opacity=75); /* For IE8 and earlier */
+}
+
+#header #icons img {
+  padding: 0 0 0 5px;
+}
+
+
+/*
+ * Parts
+ */
+
+#content {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.gallery01 {
+  margin: 0;
+  padding: 0;
+}
+
+.slides_container {
+  width:570px;
+  /*min-height:200px;*/
+}
+.slides_container div {
+  width:570px;
+  /*min-height:200px;*/
+  display:block;
+  opacity: 0.5;
+}
+
+.prev{
+  float: left;
+}
+
+.next{
+  z-index: 1;
+  display: block;
+  float: right;
+}
+
+/*
+.slides_container img:first-child  {
+  height: auto or 100%;
+}
+*/
+
+/*
+ * Projects
+ */
+
+ ul.projects {
+  width: 968px;
+  margin: 0px;
+  padding: 0px;
+ }
+
+ ul.projects li {
+  float: left;
+  position: relative;
+  list-style-type: none;
+  width: 233px;
+  height: 200px;
+  margin-right: 9px;
+  margin-bottom: 9px;
+ }
+
+ ul.projects img {
+  width: 233px;
+ }
+
+ ul.projects li h5 {
+  position: absolute;
+  left: -2px;
+  bottom: -73px;
+  /*text-shadow: 3px 3px 4px #000;
+  /*text-align: center;
+  display: inline;*/
+  /*color: #fff;*/
+ }
+
+ ul.projects a {
+  color: #ffffff;
+ }
+
+ ul.projects a:hover {
+  color: #d9593d;
+  -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+ }
+
+/*
+ * Portfolio Page
+ */
+
+.columnl {
+  float: left;
+  width: 350px;
+  text-align: right;
+  margin: 15px 0px;
+  padding: 0px;
+ }
+
+ .columnl h1 {
+  line-height: 0px;
+ }
+
+.columnl h2 {
+  line-height: 30px;
+}
+
+.column_dash{
+
+}
+
+.columnr {
+  float: left;
+  width: 550px;
+  min-height: 92px;
+  border-left: 1px dashed #d9593d;
+  margin: 15px 0px 15px 20px;
+  padding: 0 0 0 20px;
+}
+
+ .columnr_border {
+    margin-bottom: -15px;
+ }
+
+  .columnr_text p {
+    padding: 0 0 15px 0;
+ }
+
+.gallery{
+  margin: 0;
+  padding: 0;
+  float: left;
+ }
+
+.gallery li {
+  list-style: none;
+ }
