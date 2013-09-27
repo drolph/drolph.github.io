@@ -241,8 +241,8 @@
 				setSlidePosition();
 				// if "vertical" mode, always use adaptiveHeight to prevent odd behavior
 				if (slider.settings.mode == 'vertical') slider.settings.adaptiveHeight = true;
-				// set the viewport height
-				slider.viewport.height(getViewportHeight());
+				// set the viewport height DEL (getViewportHeight());
+				slider.viewport.height(100%);
 				// onSliderLoad callback
 				slider.settings.onSliderLoad(slider.active.index);
 				// slider has been fully initialized
