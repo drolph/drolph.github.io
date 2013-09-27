@@ -1,4 +1,5 @@
 /**
+ * My modified version of BxSlider (BxSliderDr)
  * BxSlider v4.0 - Fully loaded, responsive content slider
  * http://bxslider.com
  *
@@ -76,13 +77,13 @@
 		onSlidePrev: function() {}
 	}
 
-	$.fn.bxSlider = function(options){
+	$.fn.bxSliderDr = function(options){
 		
 		if(this.length == 0) return;
 		
 		// support mutltiple elements
 		if(this.length > 1){
-			this.each(function(){$(this).bxSlider(options)});
+			this.each(function(){$(this).bxSliderDr(options)});
 			return this;
 		}
 		
@@ -160,7 +161,7 @@
 		 */
 		var setup = function(){
 			// wrap el in a wrapper
-			el.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div></div>');
+			//el.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div></div>');
 			// store a namspace reference to .bx-viewport
 			slider.viewport = el.parent();
 			// add a loading div to display while images are loading
